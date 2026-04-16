@@ -1,0 +1,13 @@
+{
+  "name": "contenthub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ContentHub - 内容分发工具",
+  "scripts": {
+    "dev:web": "pnpm --filter @contenthub/web dev",
+    "dev:server": "pnpm --filter @contenthub/server start:dev",
+    "build:web": "pnpm --filter @contenthub/web build",
+    "build:server": "pnpm --filter @contenthub/server build",
+    "dev": "pnpm run --parallel dev:web dev:server"
+  }
+}
